@@ -1,0 +1,98 @@
+h1{
+    font-family: $secondary-font;
+    font-weight: $bold;
+    font-size:  $titulo;
+}
+
+h2{
+    font-family: $secondary-font;
+    font-weight: $semibold;
+    font-size:$subtitulo;
+}
+
+h3{
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: $subsub;
+}
+
+h4{
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: $parrafo;
+   
+}
+
+h5{
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: $subsub;
+}
+
+h6{
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: $small;
+    .nota{
+        font-weight: $light;
+        font-size: $xsmall;
+    }
+}
+
+p{
+    font-family: $primary-font;
+    font-weight: $light;
+    font-size: $small;
+    line-height: 22px;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 768px) {
+h1{
+    font-family: $secondary-font;
+    font-weight: $bold;
+    font-size: $nombre;
+}
+
+h2{
+    font-family: $secondary-font;
+    font-weight: $semibold;
+    font-size: $titulo;
+}
+
+h3{
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: $subtitulo;
+}
+
+h4{
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: $subsub;
+  
+}
+
+h5{
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: $subsub;
+}
+
+h6{
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: $small;
+    .nota{
+        font-weight: $light;
+        font-size: $xsmall;
+    }
+}
+
+p{
+    font-family: $primary-font;
+    font-weight: $light;
+    font-size: $parrafo;
+    line-height: 24px;
+}
+}

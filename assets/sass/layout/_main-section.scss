@@ -1,0 +1,495 @@
+/* -------------------------------- 
+  
+  Main components 
+  
+  -------------------------------- */
+  html, body {
+    height: 100%;
+  }
+  
+  header {
+    z-index: 3;
+  }
+  /* -------------------------------- 
+
+Primary style navbar
+
+-------------------------------- */
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  *::after, *::before {
+    content: '';
+  }
+  
+  body {
+    font-size: 100%;
+    font-family: 'Karla', sans-serif;
+    color: $color-1;
+    background-color:$color-3;
+    margin: 0em;
+  }
+  
+/*-----------ACERCADEMI---------*/
+.acercademi{
+  background-color: $color-4;
+  padding:30px 20px 0px;
+}
+@media (min-width: 992px){
+	.acercademi{
+		padding: 30px 80px 0px;
+	}
+}
+
+/*-----------------------destacados--------------------*/
+
+.destacados{
+	margin: 30px 0px;
+	padding:30px 20px;
+	h2{
+	color: $color-4;
+	margin-bottom: 20px;
+	}
+	h3{
+		text-align: center;
+		color: $color-4;
+	}
+  }
+
+.destaca{
+	padding: 10px 0px;
+}
+.vermas{
+	padding: 10px 10px;
+}
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+.effect {
+	margin: auto;
+	/*box-shadow: 0 0 15px 5px $color-3;*/
+	background-color: $color-5;
+	border: 5px solid $color-5;
+}
+
+.tab .effect {
+    position: relative;
+    overflow: hidden;
+    max-height: 240px;
+    max-width: 350px;
+    background:$color-6;
+    text-align: center;
+    cursor: pointer
+}
+.tab .effect img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    opacity: .8
+}
+.tab .effect .tab-text {
+	padding: 2em;
+	color:$color-3; /*era5*/
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+.tab-text h3 {
+	color:$color-3;
+	margin: 0;
+}
+
+.tab-text p {
+	color:$color-3;
+	margin: 0;
+}
+
+.effect.effect-twelve {
+	background: $color-6; /*color efecto cubre el recuadro*/
+}
+
+.effect-twelve .tab-text h3 {
+	position: relative;
+	padding: .5em 0;
+	text-align: left;
+	overflow: hidden;
+}
+
+.effect.effect-twelve h3:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color:$color-5;
+	transform: translate3d(-100%, 0, 0);
+	transition: all .35s;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-webkit-transition: all .35s
+}
+
+.effect.effect-twelve:hover h3:after {
+	transform: translate3d(0, 0, 0)
+}
+
+.effect-twelve .tab-text p {
+	padding: .7em 0;
+	font-size: .8rem;
+	text-align: left;
+	line-height: 1.1;
+	transform: translate3d(100%, 0, 0);
+	-webkit-transform: translate3d(100%, 0, 0);
+	opacity: 0;
+	transition: all .35s;
+	-webkit-transition: all .35s;
+}
+
+.effect-twelve:hover p {
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	opacity: 1
+}
+
+.effect.effect-twelve img {
+	max-width: none;
+	opacity: 1;
+	transform: translate3d(-10px, 0, 0);
+	transition: all .35s;
+	-webkit-transform: translate3d(-10px, 0, 0);
+	-webkit-transition: all .35s
+}
+
+.effect.effect-twelve:hover img {
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	opacity: .4
+}
+
+.image__proyecto{
+  width: 110%;  /*para que no quede vacio al lado*/
+}
+
+@media (min-width: 992px){
+	.destacados{
+		padding: 30px 80px;
+	}
+}
+
+/*------------contacto-------------*/
+.contacto{
+	background-color: $color-4;
+	margin: 0;
+	padding:30px 20px;
+  }
+.contact__email{
+	text-decoration: none;
+	color: $color-1;
+}
+.contact__email:hover { 
+	color:$color-7; 
+	text-decoration:none; 
+	cursor:pointer; }
+@media (min-width: 992px){
+	.contacto{
+		padding: 30px 80px;
+	}
+}
+
+
+/*------------------------INTERNO 1--------------------------*/
+.encabezado{
+	background-color: $color-3;
+	margin:0px;
+	padding:30px 20px;
+
+	h2{
+		color: $color-2;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	p{
+		text-align: center;
+		color: $color-2;
+	}
+}
+@media (min-width: 992px){
+	.encabezado{
+		padding:40px 80px 20px 80px;
+	}
+}
+.galeria__proyectos{
+	margin: 0px;
+	padding:40px 20px;
+	.effect__proyecto{
+		margin: 20px 0px;
+	}
+}
+.galeria__tipo{
+	background-color: $color-3;
+}
+@media (min-width: 992px){
+	.galeria__proyectos{
+		padding:30px 80px;
+	}
+}
+
+
+
+/*------------------------PROYECTOS-------------------------*/
+.encabezado__1{
+	margin:0px;
+	padding:90px 20px;
+
+	h2{
+		color: white;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	p{
+		text-align: center;
+		color: $color-2;
+	}
+} 
+.header{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.albissola{
+	background-image: url("../img/albissola-head.jpg");
+	
+}
+.po{
+	background-image: url("../img/po-head.jpg");
+}
+.ciclo{
+	background-image: url("../img/ciclo-head.jpg");
+}
+.bloom{
+	background-image: url("../img/Bloom-3tesi.png");
+}
+.hackcovid{
+	background-image: url("../img/hackcovid-head.png");
+}
+.bloom{
+	background-image: url("../img/portad-20.jpg");
+}
+.elcorte{
+	background-image: url("../img/elcorte-head.jpg");
+}
+.slowb{
+	background-image: url("../img/slow-head.png");
+}
+.virtual{
+	background-image: url("../img/fablab-head.jpg");
+}
+.eatfit{
+	background-image: url("../img/eatfit-head.png");
+}
+.eymi{
+	background-image: url("../img/eymi-head.png");
+}
+
+.problema__1{
+	background-color: $color-2;
+	margin:0px;
+	padding:30px 20px;
+
+	h3{
+		color:$color-1;
+		text-align: left;
+	}
+	p{
+		text-align: center;
+		color: $color-1;
+	}
+}
+
+.imgcentro{
+display: block;
+margin: auto;
+}
+@media (min-width: 992px){
+	.encabezado__1{
+		padding:90px 80px;
+	}
+
+	.problema__1{
+		padding:20px 180px; /*de etapas proceso*/
+	}
+	.padrecen{				/* centrar en vertical*/
+		display: flex;
+		align-items: center;
+	}
+	
+	
+}
+.proceso__1{
+	background-color: white;
+	margin:0px;
+	padding:30px 20px;
+	.color5{
+		color: $color-5;
+	}
+	.color7{
+		color: $color-7;
+	}
+	.color9{
+		color: $color-9;
+	}
+	.color10{
+		color: $color-10;
+	}
+	.pasos{
+		border:  1px solid $color-5;
+		height:0;
+		margin-top: 0;
+	}
+	.pasos2{
+		border:  1px solid $color-10;
+		height:0;
+		margin-top: 0;
+	}
+
+	.pasos3{
+		border:  1px solid $color-1;
+		height:0;
+		margin-top: 0;
+	}
+	.pasos4{
+		border: 1px solid;
+		height:0;
+		margin-top: 0;
+	}
+	.left{
+		text-align: justify;
+	}
+	
+	h3{
+		color:$color-1;
+		text-align: left;
+		margin-top: 10px;
+	}
+	p{
+		text-align: center;
+		color: $color-1;
+	}
+}
+.maps{
+	width: 85vw;
+	text-align: center;
+}
+
+/*---------------tabla KPI----------------------*/
+.table-hover tbody tr:hover td {
+    background:$color-10;
+}
+.table__slow{
+	color: $color-10;
+}
+.table__eymi{
+	color: $color-9;
+}
+.proceso__eymi{
+	.table-hover tbody tr:hover td {
+		background:$color-9;}
+}
+
+/*---------------galeria ver más proyectos----------------------*/
+.galeria__mas{
+		background-color: $color-4;
+	
+	.effect {
+		margin: auto;
+		background-color: $color-7; /*eran 7*/
+		border: 5px solid $color-10;/*borde cuadro*/
+	}
+	
+	.tab .effect {
+		position: relative;
+		overflow: hidden;
+		max-height: 240px;
+		max-width: 350px;
+		background:$color-10;
+		text-align: center;
+		cursor: pointer
+	}
+	.effect.effect-twelve {
+		background: $color-10; /*color efecto cubre el recuadro*/
+	}
+
+}
+@media (min-width: 992px){
+	.proceso__1{
+		padding:40px 240px; /*borde general*/
+	}
+	.maps{
+		width: 70vw;
+	}
+	.galeria__mas{
+		padding-left:200px ;
+		padding-right: 200px;
+		h4{
+			margin: 10px 10px 20px 10px;
+		}
+
+	}
+}
+
+/*-------------corteingles-----------*/
+.persona{
+	img{
+		width: 80%;
+		padding:20px 0px;
+	}
+	p{
+		text-align: left;
+	}
+}
+.ficha{
+	background-color: $color-5;
+	padding: 0px 20px;
+	p{
+		text-align: left;
+		color: white;
+		padding:0px 25px;
+	}
+	h4{
+		font-weight: $bold;
+		color: white;
+	}
+
+	.cita {
+		font-style: italic;
+	}	
+}
+.interaccion{
+	max-width: 100%;
+}
+.wireframe{
+	background-color: $color-10;
+	padding: 10px;
+}
+.wireframe-desk{
+	max-width: 90%;
+}
+@media (min-width: 992px){
+	.persona{
+		margin: 0px 15px 0px 50px;
+	}
+	
+}
+/*--------------------eymi*/

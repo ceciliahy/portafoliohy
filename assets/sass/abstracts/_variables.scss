@@ -1,0 +1,48 @@
+// colors
+
+$color-1: #0b0c0e;//#091d23; // texto 
+$color-2:#fafafaef;// #c5c6c7; //lighten($color-1, 20%); //gris y texto
+$color-3: #181726;//#000003;//#ffb441; // fondo oscuro
+$color-4: #eddfd9; //fondo claro//#ffffff; 
+$color-5:#339999; //#1e6074; //texto menu y verde
+$color-6:#43bebe;//#66ffff; //efecto
+$color-7: #ed6062;//#ff6666; //coral
+$color-8: #1a4355; //azul petroleo extra
+$color-9: #8ABFFA;//EIMY
+$color-10: #f0c9bc; //letra slowbeauty
+
+
+
+// FONT FAMILY
+$primary-font:'Montserrat', sans-serif;
+//$primary-font:'Karla', sans-serif;//
+$secondary-font:'Old Standard TT', serif;
+
+///*font weight*/
+$light: 300;
+$regular:400;
+$medium: 500;
+$semibold: 600;
+$bold:700;
+
+/*FONT SIZES*/
+$nombre: 72px;
+$titulo:55px;
+$nav: 32px;
+$subtitulo:25px;
+$subsub:20px;
+$parrafo:16px;
+$small:14px;
+$xsmall:9px;
+
+
+// z-index 
+
+$content-zindex: 1;
+$layer-nav-zindex: 2;
+$nav-zindex: 3;
+$layer-content-zindex: 4;
+$trigger-zindex: 5;
+
+
+
