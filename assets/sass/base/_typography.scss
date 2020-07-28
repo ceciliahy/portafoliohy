@@ -7,7 +7,8 @@ h1{
 h2{
     font-family: $secondary-font;
     font-weight: $semibold;
-    font-size:$subtitulo;
+    font-size:48px;
+    line-height: 50px;
 }
 
 h3{
@@ -26,7 +27,7 @@ h4{
 h5{
     font-family: $primary-font;
     font-weight: $regular;
-    font-size: $subsub;
+    font-size: $parrafo;
 }
 
 h6{
@@ -49,44 +50,24 @@ p{
 // Large devices (desktops, 992px and up)
 @media (min-width: 768px) {
 h1{
-    font-family: $secondary-font;
-    font-weight: $bold;
     font-size: $nombre;
 }
 
 h2{
-    font-family: $secondary-font;
-    font-weight: $semibold;
     font-size: $titulo;
 }
 
 h3{
-    font-family: $primary-font;
-    font-weight: $regular;
     font-size: $subtitulo;
 }
 
 h4{
-    font-family: $primary-font;
-    font-weight: $regular;
     font-size: $subsub;
   
 }
 
 h5{
-    font-family: $primary-font;
-    font-weight: $regular;
-    font-size: $subsub;
-}
-
-h6{
-    font-family: $primary-font;
-    font-weight: $regular;
-    font-size: $small;
-    .nota{
-        font-weight: $light;
-        font-size: $xsmall;
-    }
+    font-size: $parrafo;
 }
 
 p{

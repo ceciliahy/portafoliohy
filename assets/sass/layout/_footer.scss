@@ -9,6 +9,10 @@ footer{
         color: $color-1;
         padding: 10px;
     }
+    i:after{
+        text-decoration: none;
+        color: $color-7;
+    }
     
     h4 {
         overflow: hidden;

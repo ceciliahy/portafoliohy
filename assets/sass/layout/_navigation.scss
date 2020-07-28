@@ -3,22 +3,22 @@
     text-decoration: none;
   }
 
-.cd-logo, .cd-nav-trigger {
+.cd-logo, .cd-nav-trigger {    /*logo*/
     position: fixed;
     display: inline-block;
   }
   
   .cd-logo {
-    top: 28px;
-    left: 5%;
+    top: 20px;
+    left: 3%;
   }
   .cd-logo img {
     display: block;
   }
   
-  .cd-nav-trigger {
+  .cd-nav-trigger { /*menu*/
     top: 18px;
-    right: 5%;
+    right: 3%;
     height: 44px;
     width: 44px;
     z-index: 5;
@@ -194,7 +194,6 @@
   .cd-primary-nav li {
     margin: 1.6em 0;
     text-align: center;
-    text-transform: capitalize;
   }
   .cd-primary-nav a { /*-------------revisar de aqui en adelante----------------*/
     font-size: $subsub;
@@ -236,7 +235,7 @@
     /* containers of the 2 main rounded backgrounds - these containers are used to position the rounded bgs behind the menu icon */
     position: fixed;
     top: 18px;
-    right: 5%;
+    right: 3%;
     height: 4px;
     width: 4px;
     -webkit-transform: translateX(-20px) translateY(20px);

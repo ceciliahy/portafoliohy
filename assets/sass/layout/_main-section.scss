@@ -36,11 +36,11 @@ Primary style navbar
 /*-----------ACERCADEMI---------*/
 .acercademi{
   background-color: $color-4;
-  padding:30px 20px 0px;
+  padding:30px 30px 0px;
 }
 @media (min-width: 992px){
 	.acercademi{
-		padding: 30px 80px 0px;
+		padding: 30px 150px 0px;
 	}
 }
 
@@ -74,9 +74,9 @@ Primary style navbar
 }
 .effect {
 	margin: auto;
-	/*box-shadow: 0 0 15px 5px $color-3;*/
-	background-color: $color-5;
-	border: 5px solid $color-5;
+	/*box-shadow: 0 0 5px 1px $color-2;*/
+	/*background-color: $color-5;
+	/*border: 1px solid $color-5; borde imagen*/
 }
 
 .tab .effect {
@@ -84,7 +84,7 @@ Primary style navbar
     overflow: hidden;
     max-height: 240px;
     max-width: 350px;
-    background:$color-6;
+    background:$color-2;/*6*/
     text-align: center;
     cursor: pointer
 }
@@ -92,7 +92,7 @@ Primary style navbar
     position: relative;
     display: block;
     min-height: 100%;
-    opacity: .8
+    /*opacity: .8 */
 }
 .tab .effect .tab-text {
 	padding: 2em;
@@ -107,12 +107,12 @@ Primary style navbar
 }
 
 .tab-text h3 {
-	color:$color-3;
+	color:$color-1;
 	margin: 0;
 }
 
-.tab-text p {
-	color:$color-3;
+.tab-text h6 {
+	color:$color-1;
 	margin: 0;
 }
 
@@ -134,7 +134,7 @@ Primary style navbar
 	left: 0;
 	width: 100%;
 	height: 3px;
-	background-color:$color-5;
+	background-color:$color-3;/*barrita*/
 	transform: translate3d(-100%, 0, 0);
 	transition: all .35s;
 	-webkit-transform: translate3d(-100%, 0, 0);
@@ -145,11 +145,11 @@ Primary style navbar
 	transform: translate3d(0, 0, 0)
 }
 
-.effect-twelve .tab-text p {
+.effect-twelve .tab-text h6 {
 	padding: .7em 0;
-	font-size: .8rem;
+	/*font-size: .8rem;*/
 	text-align: left;
-	line-height: 1.1;
+	line-height: 1.2;
 	transform: translate3d(100%, 0, 0);
 	-webkit-transform: translate3d(100%, 0, 0);
 	opacity: 0;
@@ -157,7 +157,7 @@ Primary style navbar
 	-webkit-transition: all .35s;
 }
 
-.effect-twelve:hover p {
+.effect-twelve:hover h6 {
 	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 	opacity: 1
@@ -165,7 +165,7 @@ Primary style navbar
 
 .effect.effect-twelve img {
 	max-width: none;
-	opacity: 1;
+	opacity: 1; /*antes del hover*/
 	transform: translate3d(-10px, 0, 0);
 	transition: all .35s;
 	-webkit-transform: translate3d(-10px, 0, 0);
@@ -175,7 +175,7 @@ Primary style navbar
 .effect.effect-twelve:hover img {
 	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
-	opacity: .4
+	opacity: 0.1 /*.4 opacidad hover cuanto deja ver de la imagen*/
 }
 
 .image__proyecto{
@@ -210,25 +210,30 @@ Primary style navbar
 
 
 /*------------------------INTERNO 1--------------------------*/
+/*secciones generales*/
 .encabezado{
 	background-color: $color-3;
 	margin:0px;
 	padding:30px 20px;
 
 	h2{
-		color: $color-2;
+		color: $color-8;
 		margin-bottom: 20px;
 		text-align: center;
+		
 	}
 	p{
 		text-align: center;
-		color: $color-2;
+		color: $color-8;
 	}
 }
-@media (min-width: 992px){
-	.encabezado{
-		padding:40px 80px 20px 80px;
-	}
+.ver{
+	color: $color-1;
+}
+.ver:hover{
+	color:$color-7;
+	text-decoration:none; 
+	cursor:pointer;
 }
 .galeria__proyectos{
 	margin: 0px;
@@ -241,6 +246,9 @@ Primary style navbar
 	background-color: $color-3;
 }
 @media (min-width: 992px){
+	.encabezado{
+		padding:40px 80px 20px 80px;
+	}
 	.galeria__proyectos{
 		padding:30px 80px;
 	}
@@ -255,12 +263,24 @@ Primary style navbar
 
 	h2{
 		color: white;
+		text-shadow:  0px 1px 0px  $color-3;
 		margin-bottom: 20px;
 		text-align: center;
 	}
 	p{
 		text-align: center;
 		color: $color-2;
+	}
+	h5{
+		text-align: center;
+		font-size: 18px;
+		font-weight: $light;
+	}
+	.color3{
+		color: $color-3;
+	}
+	.color8{
+		color: $color-8;
 	}
 } 
 .header{
@@ -415,7 +435,7 @@ margin: auto;
 	.effect {
 		margin: auto;
 		background-color: $color-7; /*eran 7*/
-		border: 5px solid $color-10;/*borde cuadro*/
+		/*border: 5px solid $color-10;borde cuadro*/
 	}
 	
 	.tab .effect {

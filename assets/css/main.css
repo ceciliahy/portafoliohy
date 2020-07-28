@@ -6,12 +6,13 @@ body {
 h1 {
   font-family: "Old Standard TT", serif;
   font-weight: 700;
-  font-size: 55px; }
+  font-size: 58px; }
 
 h2 {
   font-family: "Old Standard TT", serif;
   font-weight: 600;
-  font-size: 25px; }
+  font-size: 48px;
+  line-height: 50px; }
 
 h3 {
   font-family: "Montserrat", sans-serif;
@@ -26,7 +27,7 @@ h4 {
 h5 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 20px; }
+  font-size: 16px; }
 
 h6 {
   font-family: "Montserrat", sans-serif;
@@ -44,37 +45,19 @@ p {
 
 @media (min-width: 768px) {
   h1 {
-    font-family: "Old Standard TT", serif;
-    font-weight: 700;
     font-size: 72px; }
 
   h2 {
-    font-family: "Old Standard TT", serif;
-    font-weight: 600;
-    font-size: 55px; }
+    font-size: 58px; }
 
   h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
     font-size: 25px; }
 
   h4 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
     font-size: 20px; }
 
   h5 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 20px; }
-
-  h6 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 14px; }
-    h6 .nota {
-      font-weight: 300;
-      font-size: 9px; }
+    font-size: 16px; }
 
   p {
     font-family: "Montserrat", sans-serif;
@@ -86,19 +69,21 @@ p {
   text-decoration: none; }
 
 .cd-logo, .cd-nav-trigger {
+  /*logo*/
   position: fixed;
   display: inline-block; }
 
 .cd-logo {
-  top: 28px;
-  left: 5%; }
+  top: 20px;
+  left: 3%; }
 
 .cd-logo img {
   display: block; }
 
 .cd-nav-trigger {
+  /*menu*/
   top: 18px;
-  right: 5%;
+  right: 3%;
   height: 44px;
   width: 44px;
   z-index: 5;
@@ -272,8 +257,7 @@ p {
 
 .cd-primary-nav li {
   margin: 1.6em 0;
-  text-align: center;
-  text-transform: capitalize; }
+  text-align: center; }
 
 .cd-primary-nav a {
   /*-------------revisar de aqui en adelante----------------*/
@@ -311,7 +295,7 @@ p {
   /* containers of the 2 main rounded backgrounds - these containers are used to position the rounded bgs behind the menu icon */
   position: fixed;
   top: 18px;
-  right: 5%;
+  right: 3%;
   height: 4px;
   width: 4px;
   -webkit-transform: translateX(-20px) translateY(20px);
@@ -410,92 +394,104 @@ p {
 }*/
 /* -------------------------------- */
 .herosection {
-  padding: 50px 0px; }
-
-.nombre {
-  position: absolute;
-  top: 30vh;
-  left: 10vw;
-  font-size: 72px;
-  font-weight: 400;
-  font-style: italic;
-  color: #eddfd9; }
-
-.apellido {
-  position: absolute;
-  top: 55vh;
-  left: 40vw;
-  font-size: 72px;
-  font-weight: 400;
-  font-style: italic;
-  color: #eddfd9; }
-
-/*------imagenes-----------*/
-#portada {
-  position: relative;
-  top: 15px;
-  height: 80vh;
-  width: 90vw; }
-
-#portada img {
-  position: absolute;
-  height: 80vh;
-  width: 100vw; }
-
-#portada img {
-  -webkit-animation-name: portadaFadeInOut;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 12s;
-  -moz-animation-name: portadaFadeInOut;
-  -moz-animation-timing-function: ease-in-out;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-duration: 12s;
-  -o-animation-name: portadaFadeInOut;
-  -o-animation-timing-function: ease-in-out;
-  -o-animation-iteration-count: infinite;
-  -o-animation-duration: 12s;
-  animation-name: portadaFadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 12s; }
-
-#portada img:nth-of-type(1) {
-  -webkit-animation-delay: 10s;
-  -moz-animation-delay: 10s;
-  -o-animation-delay: 10s;
-  animation-delay: 10s; }
-
-#portada img:nth-of-type(2) {
-  -webkit-animation-delay: 8s;
-  -moz-animation-delay: 8s;
-  -o-animation-delay: 8s;
-  animation-delay: 8s; }
-
-#portada img:nth-of-type(3) {
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  -o-animation-delay: 6s;
-  animation-delay: 6s; }
-
-#portada img:nth-of-type(4) {
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  -o-animation-delay: 4s;
-  animation-delay: 4s; }
-
-#portada img:nth-of-type(5) {
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
-  animation-delay: 2s; }
-
-#portada img:nth-of-type(6) {
-  -webkit-animation-delay: 0;
-  -moz-animation-delay: 0;
-  -o-animation-delay: 0;
-  animation-delay: 0; }
-
+  padding: 50px 0px;
+  /*
+  .nombre{
+      position:absolute;
+      top: 30vh;
+      left:10vw;
+      font-size: $nombre;
+      font-weight: $regular;
+      font-style: italic;
+      color: $color-4;//$color-6;
+    }
+    .apellido{
+      position:absolute;
+      top: 55vh;
+      left: 40vw;
+      font-size:  $nombre;
+      font-weight: $regular;
+      font-style: italic;
+      color: $color-4;
+    }*/
+  /*------imagenes-----------*/ }
+  .herosection .nombre {
+    position: absolute;
+    top: 75vh;
+    left: 30vw;
+    font-size: 72px;
+    font-weight: 400;
+    font-style: italic;
+    color: #eddfd9;
+    text-shadow: -1px 1px 3px #181726; }
+  .herosection .apellido {
+    position: absolute;
+    top: 85vh;
+    left: 30vw;
+    font-size: 72px;
+    font-weight: 400;
+    font-style: italic;
+    color: #eddfd9;
+    text-shadow: -1px 1px 3px #181726; }
+  .herosection #portada {
+    position: relative;
+    top: 15px;
+    height: 80vh;
+    width: 100vw;
+    /*90*/
+    margin: auto; }
+  .herosection #portada img {
+    position: absolute;
+    max-height: 80vh;
+    /* height: 80vh;  */
+    width: 100vw; }
+  .herosection #portada img {
+    -webkit-animation-name: portadaFadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 12s;
+    -moz-animation-name: portadaFadeInOut;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 12s;
+    -o-animation-name: portadaFadeInOut;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 12s;
+    animation-name: portadaFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s; }
+  .herosection #portada img:nth-of-type(1) {
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    -o-animation-delay: 10s;
+    animation-delay: 10s; }
+  .herosection #portada img:nth-of-type(2) {
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    animation-delay: 8s; }
+  .herosection #portada img:nth-of-type(3) {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s; }
+  .herosection #portada img:nth-of-type(4) {
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s; }
+  .herosection #portada img:nth-of-type(5) {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s; }
+  .herosection #portada img:nth-of-type(6) {
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-delay: 0; }
 @-webkit-keyframes portadaFadeInOut {
   0% {
     opacity: 1; }
@@ -540,36 +536,42 @@ p {
     opacity: 0; }
   100% {
     opacity: 1; } }
-@media (min-width: 576px) {
-  .nombre {
-    position: absolute;
-    top: 30vh;
-    left: 20vw;
-    font-size: 72px; }
+  @media (min-width: 576px) {
+    .herosection {
+      /*------imagenes-----------*/ }
+      .herosection .nombre {
+        position: absolute;
+        top: 50vh;
+        /*30*/
+        left: 20vw;
+        font-size: 72px; }
+      .herosection .apellido {
+        position: absolute;
+        top: 62vh;
+        /*42*/
+        left: 20vw;
+        font-size: 72px; }
+      .herosection #portada {
+        position: relative;
+        height: 80vh;
+        width: 90vw; }
+      .herosection #portada img {
+        position: absolute;
+        width: 60%;
+        /*80vh*/
+        left: 30%;
+        /*30%*/ } }
+  @media (min-width: 768px) {
+    .herosection #portada img {
+      width: 55%;
+      /*50*/
+      left: 45%; } }
+  @media (min-width: 992px) {
+    .herosection #portada {
+      height: 85vh; }
+    .herosection #portada img {
+      width: 35%; } }
 
-  .apellido {
-    position: absolute;
-    top: 55vh;
-    left: 60vw;
-    font-size: 72px; }
-
-  /*------imagenes-----------*/
-  #portada {
-    position: relative;
-    height: 80vh; }
-
-  #portada img {
-    position: absolute;
-    height: 80vh;
-    /*width: 40%; */
-    left: 30%; } }
-@media (min-width: 768px) {
-  #portada img {
-    width: 50%;
-    left: 35%; } }
-@media (min-width: 992px) {
-  #portada img {
-    width: 35%; } }
 /* -------------------------------- 
   
   Main components 
@@ -604,11 +606,11 @@ body {
 /*-----------ACERCADEMI---------*/
 .acercademi {
   background-color: #eddfd9;
-  padding: 30px 20px 0px; }
+  padding: 30px 30px 0px; }
 
 @media (min-width: 992px) {
   .acercademi {
-    padding: 30px 80px 0px; } }
+    padding: 30px 150px 0px; } }
 /*-----------------------destacados--------------------*/
 .destacados {
   margin: 30px 0px;
@@ -635,16 +637,17 @@ body {
 
 .effect {
   margin: auto;
-  /*box-shadow: 0 0 15px 5px $color-3;*/
-  background-color: #339999;
-  border: 5px solid #339999; }
+  /*box-shadow: 0 0 5px 1px $color-2;*/
+  /*background-color: $color-5;
+  /*border: 1px solid $color-5; borde imagen*/ }
 
 .tab .effect {
   position: relative;
   overflow: hidden;
   max-height: 240px;
   max-width: 350px;
-  background: #43bebe;
+  background: #fafafaef;
+  /*6*/
   text-align: center;
   cursor: pointer; }
 
@@ -652,7 +655,7 @@ body {
   position: relative;
   display: block;
   min-height: 100%;
-  opacity: 0.8; }
+  /*opacity: .8 */ }
 
 .tab .effect .tab-text {
   padding: 2em;
@@ -667,11 +670,11 @@ body {
   height: 100%; }
 
 .tab-text h3 {
-  color: #181726;
+  color: #0b0c0e;
   margin: 0; }
 
-.tab-text p {
-  color: #181726;
+.tab-text h6 {
+  color: #0b0c0e;
   margin: 0; }
 
 .effect.effect-twelve {
@@ -691,7 +694,8 @@ body {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #339999;
+  background-color: #181726;
+  /*barrita*/
   transform: translate3d(-100%, 0, 0);
   transition: all .35s;
   -webkit-transform: translate3d(-100%, 0, 0);
@@ -700,18 +704,18 @@ body {
 .effect.effect-twelve:hover h3:after {
   transform: translate3d(0, 0, 0); }
 
-.effect-twelve .tab-text p {
+.effect-twelve .tab-text h6 {
   padding: .7em 0;
-  font-size: .8rem;
+  /*font-size: .8rem;*/
   text-align: left;
-  line-height: 1.1;
+  line-height: 1.2;
   transform: translate3d(100%, 0, 0);
   -webkit-transform: translate3d(100%, 0, 0);
   opacity: 0;
   transition: all .35s;
   -webkit-transition: all .35s; }
 
-.effect-twelve:hover p {
+.effect-twelve:hover h6 {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   opacity: 1; }
@@ -719,6 +723,7 @@ body {
 .effect.effect-twelve img {
   max-width: none;
   opacity: 1;
+  /*antes del hover*/
   transform: translate3d(-10px, 0, 0);
   transition: all .35s;
   -webkit-transform: translate3d(-10px, 0, 0);
@@ -727,7 +732,7 @@ body {
 .effect.effect-twelve:hover img {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
-  opacity: 0.4; }
+  opacity: 0.1; }
 
 .image__proyecto {
   width: 110%;
@@ -755,21 +760,27 @@ body {
   .contacto {
     padding: 30px 80px; } }
 /*------------------------INTERNO 1--------------------------*/
+/*secciones generales*/
 .encabezado {
   background-color: #181726;
   margin: 0px;
   padding: 30px 20px; }
   .encabezado h2 {
-    color: #fafafaef;
+    color: #ffffff;
     margin-bottom: 20px;
     text-align: center; }
   .encabezado p {
     text-align: center;
-    color: #fafafaef; }
+    color: #ffffff; }
 
-@media (min-width: 992px) {
-  .encabezado {
-    padding: 40px 80px 20px 80px; } }
+.ver {
+  color: #0b0c0e; }
+
+.ver:hover {
+  color: #ed6062;
+  text-decoration: none;
+  cursor: pointer; }
+
 .galeria__proyectos {
   margin: 0px;
   padding: 40px 20px; }
@@ -780,6 +791,9 @@ body {
   background-color: #181726; }
 
 @media (min-width: 992px) {
+  .encabezado {
+    padding: 40px 80px 20px 80px; }
+
   .galeria__proyectos {
     padding: 30px 80px; } }
 /*------------------------PROYECTOS-------------------------*/
@@ -788,11 +802,20 @@ body {
   padding: 90px 20px; }
   .encabezado__1 h2 {
     color: white;
+    text-shadow: 0px 1px 0px #181726;
     margin-bottom: 20px;
     text-align: center; }
   .encabezado__1 p {
     text-align: center;
     color: #fafafaef; }
+  .encabezado__1 h5 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300; }
+  .encabezado__1 .color3 {
+    color: #181726; }
+  .encabezado__1 .color8 {
+    color: #ffffff; }
 
 .header {
   background-size: cover;
@@ -920,8 +943,7 @@ body {
     margin: auto;
     background-color: #ed6062;
     /*eran 7*/
-    border: 5px solid #f0c9bc;
-    /*borde cuadro*/ }
+    /*border: 5px solid $color-10;borde cuadro*/ }
   .galeria__mas .tab .effect {
     position: relative;
     overflow: hidden;
@@ -991,6 +1013,9 @@ footer {
     text-decoration: none;
     color: #0b0c0e;
     padding: 10px; }
+  footer i:after {
+    text-decoration: none;
+    color: #ed6062; }
   footer h4 {
     overflow: hidden;
     text-align: center; }
